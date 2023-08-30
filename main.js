@@ -20,18 +20,18 @@ faqs.forEach((faq) => {
   });
 });
 
-//Student's testimonial slide
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  //when window width is >= 600px
-  breakpoints: {
-    600: {
-      slidesPerView: 2
-    },
-  },
+// -------------------Nav menu Toggle-------------------
+const menu = document.querySelector(".nav__menu");
+const menuBtn = document.querySelector("#open-menu-btn");
+const closeBtn = document.querySelector("#close-menu-btn");
+
+menuBtn.addEventListener("click", () => {
+  menu.style.display = "flex";
+  menuBtn.style.display = "none";
+  closeBtn.style.display = "flex";
+});
+closeBtn.addEventListener("click", () => {
+  menu.style.display = "none";
+  closeBtn.style.display = "none";
+  menuBtn.style.display = "flex";
 });
