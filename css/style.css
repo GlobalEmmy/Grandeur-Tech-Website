@@ -1,6 +1,9 @@
 /* Poppins Google form */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+/* Montserrat Google form */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap'); */
+
 * {
   margin: 0;
   padding: 0;
@@ -30,9 +33,9 @@
 
   --transition: all 400ms ease;
 }
-
 body {
   font-family: "Poppins", sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   line-height: 1.7;
   color: var(--clor-white);
   background: var(--color-bg);
@@ -108,6 +111,9 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+/* .nav__container img {
+  width: 30%;
+} */
 nav button {
   display: none;
 }
@@ -123,6 +129,11 @@ nav button {
 .nav__menu a:hover {
   color: var(--color-bg2);
 }
+.window-scroll {
+  background: var(--color-primary);
+  transition: var(--transition);
+}
+
 
 /* -------------Header Section------------- */
 header {
@@ -203,11 +214,6 @@ header {
   font-size: 0.85rem;
 }
 
-.window-scroll {
-  background: var(--color-primary);
-  transition: var(--transition);
-}
-
 /* -------------Courses Section------------- */
 .courses {
   margin-top: 10rem;
@@ -233,6 +239,19 @@ header {
 .course__info p {
   margin: 1.2rem 0 2rem;
   font-size: 0.9rem;
+}
+.read-more1,
+.read-less1,
+.read-more2,
+.read-less2,
+.read-more3,
+.read-less3,
+.read-more4,
+.read-less4 {
+  padding: 0.3rem;
+  background: rgba(103, 102, 102, 0.84);
+  text-align: center;
+  margin-top: 1rem;
 }
 
 /* -------------FAQ Section------------- */
@@ -350,7 +369,8 @@ footer ul li a:hover {
 }
 
 /* ======================MEDIA QUERIES (TABLETS)============================= */
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-md);
   }
@@ -506,31 +526,30 @@ header {
     border-radius: 1rem;
   }
   .category__icon {
-       margin-top: 4px;
-       display: inline-block;   
+    margin-top: 4px;
+    display: inline-block;
   }
 
   /* ======= Popular Course Section========== */
   .courses__container {
-          grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
-    /* ======= Students' testimonial Section========== */
-    .testimonial__body {
-          padding: 1.2rem;
-    }
+  /* ======= Students' testimonial Section========== */
+  .testimonial__body {
+    padding: 1.2rem;
+  }
 
-    
-    /* ======= Footer Section========== */
-    .footer__container {
-          grid-template-columns: 1fr;
-          text-align: center;
-          gap: 2rem;
-    }
-    .footer__1 p {
-          margin: 1rem auto;
-    }
-    .footer__socials {
-          justify-content: center;
-    }
+  /* ======= Footer Section========== */
+  .footer__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  .footer__1 p {
+    margin: 1rem auto;
+  }
+  .footer__socials {
+    justify-content: center;
+  }
 }
