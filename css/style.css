@@ -151,12 +151,13 @@ header {
 }
 .header__left p {
   margin: 1rem 0 2.4rem;
+ 
 }
 
 /* -------------Categories Section------------- */
 .categories {
   background: var(--color-bg1);
-  height: 32rem;
+  height: 40rem;
 }
 .categories h1 {
   line-height: 1;
@@ -172,6 +173,14 @@ header {
 }
 .categories__left p {
   margin: 1rem 0 3rem;
+  
+}
+.categories__right p {
+  opacity: 0.5;
+  transition: var(--transition);
+}
+.categories__right p:hover {
+  opacity: 1;
 }
 
 .categories__right {
@@ -552,5 +561,8 @@ footer ul li a:hover {
   }
   .getstarted {
     margin-bottom: 1rem;
+  }
+  .footer__contact-icon {
+    justify-content: center;
   }
 }
