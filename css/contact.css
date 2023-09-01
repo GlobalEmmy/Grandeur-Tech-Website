@@ -1,3 +1,5 @@
+/* Poppins Google form */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 .contact__container {
   background: white;
   padding: 4rem;
@@ -72,6 +74,10 @@ textarea {
   width: max-content;
   margin-top: 1rem;
   cursor: pointer;
+  transition: var(--transition);
+}
+.contact__form .btn:hover {
+  background: var(--color-bg);
 }
 ::placeholder {
   color: var(--color-white);
