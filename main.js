@@ -20,3 +20,20 @@ closeBtn.addEventListener("click", () => {
   closeBtn.style.display = "none";
   menuBtn.style.display = "flex";
 });
+
+//Read more
+
+let readMoreBtn = document.querySelector(".read-more");
+let readLessBtn = document.querySelector(".read-less");
+let readMoreContent = document.querySelector(".read-more-content")
+
+readMoreBtn.addEventListener("click", () => {
+  readMoreContent.style.display = "inline-block"
+  readMoreBtn.style.display = "none"
+  readLessBtn.style.display = "inline-block"
+})
+readLessBtn.addEventListener("click", () => {
+  readMoreContent.style.display = "none"
+  readMoreBtn.style.display = "inline-block"
+  readLessBtn.style.display = "none"
+})
