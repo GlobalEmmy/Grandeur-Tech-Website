@@ -35,6 +35,8 @@
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+.contact__details h5 {
   margin-bottom: 1rem;
 }
 .contact__socials {
