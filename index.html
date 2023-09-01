@@ -47,7 +47,9 @@
             by industry professionals and tailored to the latest trends and
             developments in the tech industry.
           </p>
-          <a href="courses.html" class="btn btn-primary getstarted">Get Started</a>
+          <a href="courses.html" class="btn btn-primary getstarted"
+            >Get Started</a
+          >
         </div>
         <div class="header_right">
           <img src="./asset/image/landingimage.avif" alt="" />
@@ -251,7 +253,10 @@
         <article class="faq">
           <div class="faq__icon"><i class="uil uil-plus"></i></div>
           <div class="question__answer">
-            <h4>Is there really age limitation for taking a career in tech? I'm wondering if age can be a barrier.</h4>
+            <h4>
+              Is there really age limitation for taking a career in tech? I'm
+              wondering if age can be a barrier.
+            </h4>
             <p>
               Age is absolutely not a barrier in taking any life challenge,
               which also include tech. We have seasoned tutors that can
@@ -307,25 +312,25 @@
           <div class="faq__icon"><i class="uil uil-plus"></i></div>
           <div class="question__answer">
             <h4>How do I apply tech to my nursing career and earn from it?</h4>
-            <p>
-              Salesforce Administrator is a tech career you can venture into
-              with your background in nursing. This is a right choice for you
-              because some of the most important skills you need as a salesforce
-              administrator are empathy and a keen desire to help others,
-              qualities your nursing career will have imbibed in you.
-            </p>
+            <div class="answer">
+              <p>
+                Salesforce Administrator is a tech career you can venture into
+                with your background in nursing. This is a right choice for you
+                because some of the most important skills you need as a
+                salesforce administrator are empathy and a keen desire to help
+                others, qualities your nursing career will have imbibed in you.
+              </p>
+            </div>
           </div>
         </article>
         <article class="faq">
           <div class="faq__icon"><i class="uil uil-plus"></i></div>
-          <div class="question__answer">
-            <h4>What are the possible cons in the tech space?</h4>
-            <p>
-              Well, a con of being in the tech space would be the workload. You
-              need to mentally prepare yourself for the amount of work that
-              comes with being a techie.
-            </p>
-          </div>
+          <h4>What are the possible cons in the tech space?</h4>
+          <p>
+            Well, a con of being in the tech space would be the workload. You
+            need to mentally prepare yourself for the amount of work that comes
+            with being a techie.
+          </p>
         </article>
         <article class="faq">
           <div class="faq__icon"><i class="uil uil-plus"></i></div>
@@ -466,7 +471,10 @@
         <div class="footer__4">
           <h4>Contact Us</h4>
           <div>
-            <div class="footer__contact-icon" style="display: flex; gap: 0.5rem; align-items: center;">
+            <div
+              class="footer__contact-icon"
+              style="display: flex; gap: 0.5rem; align-items: center"
+            >
               <li>
                 <a href="tel:+2349169263133" target="_blank"
                   ><i class="uil uil-phone"></i
@@ -475,7 +483,10 @@
               <p>+2349169263133</p>
             </div>
 
-            <div class="footer__contact-icon" style="display: flex; gap: 0.5rem; align-items: center;">
+            <div
+              class="footer__contact-icon"
+              style="display: flex; gap: 0.5rem; align-items: center"
+            >
               <li>
                 <a href="mailto:grandeurtechofficial@gmail.com" target="_blank"
                   ><i class="uil uil-envelope"></i
@@ -538,6 +549,21 @@
             slidesPerView: 3,
           },
         },
+      });
+
+      // -------FAQ Toggle-----
+      const faqs = document.querySelectorAll(".faq");
+      faqs.forEach((faq) => {
+        faq.addEventListener("click", () => {
+          faq.classList.toggle("open");
+          //change icon
+          const icon = faq.querySelector(".faq__icon i");
+          if (icon.className === "uil uil-plus") {
+            icon.className = "uil uil-minus";
+          } else {
+            icon.className = "uil uil-plus";
+          }
+        });
       });
     </script>
   </body>

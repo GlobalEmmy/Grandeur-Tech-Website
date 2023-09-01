@@ -151,7 +151,6 @@ header {
 }
 .header__left p {
   margin: 1rem 0 2.4rem;
- 
 }
 
 /* -------------Categories Section------------- */
@@ -173,7 +172,6 @@ header {
 }
 .categories__left p {
   margin: 1rem 0 3rem;
-  
 }
 .categories__right p {
   opacity: 0.5;
@@ -281,6 +279,7 @@ header {
   background: var(--color-primary);
   cursor: pointer;
 }
+
 .faq h4 {
   font-size: 1rem;
   line-height: 2.2;
