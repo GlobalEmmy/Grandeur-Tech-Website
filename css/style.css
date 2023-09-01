@@ -260,9 +260,6 @@ header {
   margin-top: 1rem;
 }
 /* -------------Printing Section------------- */
-/* section.printing {
-  
-} */
 section.printing .container .service {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -271,6 +268,17 @@ section.printing .container .service {
 .service__printing p {
   padding: 2rem 0;
 }
+/* -------------Consultation Section------------- */
+section.consultation .container .service {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.service__consultation p {
+  padding: 2rem 0;
+  
+}
+
 /* -------------FAQ Section------------- */
 .faqs {
   background: var(--color-bg1);
@@ -555,12 +563,16 @@ footer ul li a:hover {
   section {
     padding: 1rem 0;
   }
-
-  
   section.printing .container .service {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+   /* -------------Consultation Section------------- */
+  section.consultation .container .service {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
 
   /* ======= Students' testimonial Section========== */
   .testimonial__body {
