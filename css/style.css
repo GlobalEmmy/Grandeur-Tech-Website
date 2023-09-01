@@ -174,11 +174,16 @@ header {
   margin: 1rem 0 3rem;
 }
 .categories__right p {
-  opacity: 0.5;
   transition: var(--transition);
+  color: var(--color-bg2);
+  font-weight: 700;
 }
 .categories__right p:hover {
-  opacity: 1;
+  opacity: 0.8;
+}
+.categories__right h5 {
+  color: var(--color-bg1);
+  font-weight: 700;
 }
 
 .categories__right {
@@ -187,7 +192,7 @@ header {
   gap: 1.2rem;
 }
 .category {
-  background: var(--color-bg2);
+  background: white;
   padding: 2rem;
   border-radius: 2rem;
   transition: var(--transition);
