@@ -1,4 +1,4 @@
-/* ======= Ahievement Section ========== */
+/* ======= Achievement Section ========== */
 .about__achievement {
   margin-top: 3rem;
 }
@@ -9,6 +9,7 @@
 }
 .about__achievement-right > p {
   margin: 1.6rem 0 2.5rem;
+
 }
 .achievements__cards {
   display: grid;
@@ -16,7 +17,7 @@
   gap: 1.5rem;
 }
 .achievement__card {
-  background: var(--color-bg1);
+  background: white;
   padding: 1.6rem;
   border-radius: 1rem;
   text-align: center;
@@ -42,6 +43,17 @@
 }
 .achievement__card p {
   margin-top: 1rem;
+  color: var(--color-bg2);
+  font-weight: 700;
+}
+.achievement__card h3 {
+  color: var(--color-bg2);
+  font-weight: 700;
+}
+.achievement__card:hover p, .achievement__card:hover h3 {
+  color: white;
+  font-weight: 700;
+  transition: var(--transition);
 }
 
 /* ======= Team Section ========== */
@@ -78,7 +90,11 @@
 }
 .team__member-info p {
   color: var(--color-light);
-  margin-bottom: 1rem;
+  margin-top: -0.01rem;
+  text-align: center;
+}
+.team__member-brief p{
+  margin-top: 0.8rem;
   text-align: center;
 }
 .team__member-socials {
