@@ -134,7 +134,6 @@ nav button {
   transition: var(--transition);
 }
 
-
 /* -------------Header Section------------- */
 header {
   position: relative;
@@ -370,7 +369,7 @@ footer ul li a:hover {
 
 /* ======================MEDIA QUERIES (TABLETS)============================= */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
   }
@@ -450,46 +449,45 @@ footer ul li a:hover {
     background: var(--color-bg2);
     color: var(--clor-white);
   }
-}
+  /* ======= Header Section ========== */
+  header {
+    height: 52vh;
+    margin-bottom: 4rem;
+  }
+  .header__container {
+    gap: 0;
+    padding-bottom: 3rem;
+  }
 
-/* ======= Header Section ========== */
-header {
-  height: 52vh;
-  margin-bottom: 4rem;
-}
-.header__container {
-  gap: 0;
-  padding-bottom: 3rem;
-}
+  /* ======= Categories Section ========== */
+  .categories {
+    height: auto;
+  }
+  .categories__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
 
-/* ======= Categories Section ========== */
-.categories {
-  height: auto;
-}
-.categories__container {
-  grid-template-columns: 1fr;
-  gap: 3rem;
-}
+  /* ======= Popular Course Section========== */
+  .courses {
+    margin-top: 0;
+  }
+  .courses__container {
+    grid-template-columns: 1fr 1fr;
+  }
 
-/* ======= Popular Course Section========== */
-.courses {
-  margin-top: 0;
-}
-.courses__container {
-  grid-template-columns: 1fr 1fr;
-}
+  /* ======= FAQs Section========== */
+  .faqs__container {
+    grid-template-columns: 1fr;
+  }
+  .faq {
+    padding: 1rem;
+  }
 
-/* ======= FAQs Section========== */
-.faqs__container {
-  grid-template-columns: 1fr;
-}
-.faq {
-  padding: 1rem;
-}
-
-/* ======= Footer Section========== */
-.footer__container {
-  grid-template-columns: 1fr 1fr;
+  /* ======= Footer Section========== */
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* ======================MEDIA QUERIES (PHONES)============================= */
@@ -551,5 +549,8 @@ header {
   }
   .footer__socials {
     justify-content: center;
+  }
+  .getstarted {
+    margin-bottom: 1rem;
   }
 }

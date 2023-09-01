@@ -51,7 +51,7 @@
 }
 .team__container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 .team__member {
@@ -78,6 +78,8 @@
 }
 .team__member-info p {
   color: var(--color-light);
+  margin-bottom: 1rem;
+  text-align: center;
 }
 .team__member-socials {
   position: absolute;
@@ -133,10 +135,15 @@
           grid-template-columns: 1fr 1fr;
           gap: 0.7rem;
   }
+  .team__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
   .team__member {
      padding: 0;    
   }
   .team__member p {
-          margin-bottom: 1.5rem;
+          margin: 1rem;
+          text-align: center;
   }
 }
