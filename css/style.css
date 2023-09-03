@@ -595,6 +595,9 @@ footer ul li a:hover {
   .header__left p {
     margin-bottom: 1.3rem;
   }
+  .autoplay-progress {
+    display: none;
+  }
 
   /* ======= Categories Section ========== */
   .categories__right {
