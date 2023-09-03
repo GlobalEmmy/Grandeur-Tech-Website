@@ -111,9 +111,9 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-/* .nav__container img {
+.nav__container img {
   width: 30%;
-} */
+}
 nav button {
   display: none;
 }
@@ -151,6 +151,45 @@ header {
 }
 .header__left p {
   margin: 1rem 0 2.4rem;
+}
+
+/* -------------Header slides Section------------- */
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
 }
 
 /* -------------Categories Section------------- */
@@ -283,6 +322,11 @@ section.consultation .container .service {
   padding: 2rem 0;
   
 }
+section.printing h2, section.consultation h2 {
+  margin-top: -3rem;
+ 
+ }
+ 
 
 /* -------------FAQ Section------------- */
 .faqs {
@@ -507,6 +551,9 @@ footer ul li a:hover {
   .courses__container {
     grid-template-columns: 1fr 1fr;
   }
+  section.printing h2, section.consultion h2 {
+    margin-top: 0;
+  }
 
   /* ======= FAQs Section========== */
   .faqs__container {
@@ -577,8 +624,10 @@ footer ul li a:hover {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-
-
+  section.consultation h2 {
+    margin-top: 0;
+   }
+ 
   /* ======= Students' testimonial Section========== */
   .testimonial__body {
     padding: 1.2rem;
