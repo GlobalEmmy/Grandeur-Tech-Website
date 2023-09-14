@@ -134,7 +134,7 @@ nav {
   align-items: center;
 }
 .nav__container img {
-  width: 40%;
+  width: 20%;
 }
 nav button {
   display: none;
@@ -602,7 +602,7 @@ footer ul li a:hover {
     right: 3%;
   }
   .nav__container img {
-    width: 70%;
+    width: 55%;
   }
 
   /* ======= Header Section ========== */
