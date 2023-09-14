@@ -12,6 +12,9 @@
 }
 
 /* -----------Aside Section------------- */
+section.contact {
+  margin-top: 5rem;
+}
 .contact__aside {
   background: var(--color-primary);
   padding: 3rem;
