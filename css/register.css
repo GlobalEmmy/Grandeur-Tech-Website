@@ -69,6 +69,9 @@ section.register form .btn:hover {
   flex-direction: column;
   width: 100%;
 }
+.register-input span {
+  color: red;
+}
 
 select {
   cursor: pointer;
